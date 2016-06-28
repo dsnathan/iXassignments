@@ -7,3 +7,19 @@ title {
 h2 {
 	float:middle;
 }
+h1 {
+	font-family:cursive;
+	float:top,left;
+}
+#nav ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+#nav ul li {
+	display: inline;
+}
+#nav ul li a {
+	text-decoration: none;
+	text-decoration-color: black;
+}
