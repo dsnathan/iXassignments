@@ -1,0 +1,29 @@
+* {
+
+box­sizing: border­box;
+
+transition: .5s all ease;
+
+}
+
+.bigBox {
+
+background: none;
+
+width: 100%;
+
+}
+
+.bigBox > div {
+
+margin: 2%;
+
+background: cornflowerblue;
+
+padding: 5%;
+
+display: inline­block;
+
+width: 40%;
+
+}
