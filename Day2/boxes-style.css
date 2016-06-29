@@ -1,29 +1,20 @@
 * {
-
-box­sizing: border­box;
-
-transition: .5s all ease;
-
+  box-sizing: border-box;
+  transition: .5s all ease;
 }
 
 .bigBox {
-
-background: none;
-
-width: 100%;
-
+  background: none;
+  width: 100%;
+  border: 5px,solid,green;
 }
 
-.bigBox > div {
-
-margin: 2%;
-
-background: cornflowerblue;
-
-padding: 5%;
-
-display: inline­block;
-
-width: 40%;
-
+.bigBox > div { /*only selecting divs inside class bigBox*/
+  margin: 2%;
+  background: cornflowerblue;
+  padding: 5%;
+  display: inline-block;
+  width: 40%;
+  border: green;
+  border-width: 10px;
 }
