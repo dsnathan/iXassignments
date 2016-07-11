@@ -1,0 +1,17 @@
+<div class="row">
+	<h3>{{movie.Title}}</h3>
+		<ul> 
+			<li>Plot: {{movie.Plot}}</li>
+			<li>Rated: {{movie.Rated}}</li>
+			<li>Date Released: {{movie.Released}}</li>
+			<li>Director: {{movie.Director}}</li>
+			<li>Actors: {{movie.Actors}}</li>
+		</ul>
+</div>
+<div class="row">
+		<ul> 
+			<li ng-repeat="g in giphys">
+				<img ng-src="{{g.images.downsized.url}}"></img>
+			</li>
+		</ul>
+</div>
