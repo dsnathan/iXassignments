@@ -1,16 +1,19 @@
-<h1 class="chommies">Chommies</h1>
+<h1 class="header">Chommies</h1>
 <div class ="row">
-	<div class = "col-sm-6">
-		<input type="text" ng-model="newPropsValue">
-		<div class="middle">
-			<select ng-options="bru.id as bru.first_name for bru in brus" ng-model="selectedBru"></select>
-			<button ng-click="sendProps()">Send Props</button>
+	<form class="inputs" ng-submit="sendProps()">
+		<div class = "col-sm-6">
+			<p class="error" ng-show="errorMessage">{{errorMessage}}</p>
+			<input type="text" ng-model="newPropsValue" class="inputBox" ng-class="{'isSending': isSending}">
+			<div class="middle" ng-class="{'isSending': isSending}">
+				<select ng-options="bru.id as bru.first_name for bru in brus" ng-model="selectedBru"></select>
+				<button ng-click="sendProps()">Send Props</button>
+			</div>
+			<div class="refresh">
+				<button ng-click = "getProps()">Refresh Props</button>
+				<a href="#/me/" class="meLink">Me Page</a>
+			</div>
 		</div>
-		<div class="refresh">
-			<button ng-click = "getProps()">Refresh Props</button>
-			<a href="#/me/" class="meLink">Me Page</a>
-		</div>
-	</div>
+	</form>
 	<div class = "col-sm-6">
 		<ol class="props">
 			<li ng-repeat='p in props'>
