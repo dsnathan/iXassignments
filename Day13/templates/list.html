@@ -1,0 +1,15 @@
+<h1>Channels</h1>
+<div class="contents">
+	<ul>
+		<li ng-repeat="(key, value) in channels">
+			<a href="/#/channel/{{channel.key}}">{{value.name}}</a>
+		</li>
+	</ul>
+	<form ng-submit='newChannel()'>
+	<input ng-model="newChannelName" class="inputBox"/>
+	<button>Add Channel</button>
+	</form>
+	<form>
+		<button ng-click='signUserOut()'>Sign Out</button>
+	</form>
+</div>

@@ -1,0 +1,24 @@
+<div class="centered">
+	<div class="title"> <h2>Log in</h2> </div>
+	
+	<div class="mainBox">
+		<form ng-submit="login()">
+			
+			<div>
+				<input ng-model="email" placeholder="E-mail Address">
+			</div>
+			
+			<div>
+				<input type="password" ng-model="password" placeholder="Password">
+			</div>
+
+			<div> 
+				<button>Log in</button>
+				<p id="logInErrorMsg"> </p>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="changePage"> New to Tension? <a href="#/signup"> Sign Up </a> </div>
+</div>

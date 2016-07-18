@@ -1,0 +1,13 @@
+<a href="/#/">Back</a>
+<h1>{{channelID}}</h1>
+	<input ng-model="newMessageText" class="inputBox"/>
+	<button ng-click="newMessage()">Send Message</button>
+<div class="contents">
+	<ul class = "message_list">
+		<li ng-repeat="m in messages">
+			<h5>{{user[m.sender].name}}</h5>
+			<h6> {{m.created_at | date: 'short'}}</h6>
+			<p>{{m.text}}</p>
+		</li>
+	</ul>
+</div>
